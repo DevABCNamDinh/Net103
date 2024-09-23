@@ -1,0 +1,14 @@
+﻿@using Lab12_PH52988.Models.TestModels
+ @model Human; 
+ @{
+     Animal animal = @ViewData["animal"] as Animal;// đọc dữ liệu dạng tường minh
+ }
+@* @model List<Human>
+
+@foreach(var i in Model)
+{
+    <h1>i.Ten</h1>
+} *@
+
+<h3>View Data</h3>
+@animal.Ten  có số chân là @animal.SoChan

@@ -1,0 +1,10 @@
+﻿@{
+    var loiChao = TempData["LoiChao"] as string;
+}
+
+@if (!string.IsNullOrEmpty(loiChao))
+{
+    <div class="alert alert-success">
+        @loiChao
+    </div>
+}

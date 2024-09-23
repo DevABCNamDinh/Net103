@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Tính chu vi và diện tích tam giác";
+}
+
+<h2>Tính chu vi và diện tích tam giác</h2>
+
+<!-- Form để nhập các cạnh tam giác -->
+<form method="post" action="/Calculate/TamGiac">
+    <div>
+        <label for="a">Cạnh a:</label>
+        <input type="number" id="a" name="a" step="0.01" required />
+    </div>
+    <div>
+        <label for="b">Cạnh b:</label>
+        <input type="number" id="b" name="b" step="0.01" required />
+    </div>
+    <div>
+        <label for="c">Cạnh c:</label>
+        <input type="number" id="c" name="c" step="0.01" required />
+    </div>
+    <button type="submit">Tính toán</button>
+</form>
+@if (ViewBag.Loi != null )
+{
+   
+    <p> @ViewBag.Loi</p>
+    
+}
+@if (ViewBag.ChuVi != null && ViewBag.DienTich != null)
+{
+    <h3>Kết quả:</h3>
+    <p>Chu vi của tam giác: @ViewBag.ChuVi</p>
+    <p>Diện tích của tam giác: @ViewBag.DienTich</p>
+}

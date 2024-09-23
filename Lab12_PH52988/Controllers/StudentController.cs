@@ -18,5 +18,6 @@ namespace Lab12_PH52988.Controllers
            
             return Redirect("/Home/index");// trỏ trực tiếp tới view mà bạn cần, nếu không có logic nào chả
         }
+        
     }
 }
